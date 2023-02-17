@@ -8,8 +8,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-file = 'athlete_events.csv'
-df = pd.read_csv(file)
+
+df = pd.read_csv('athlete_events.csv')
 df_1 = pd.read_csv('noc_regions.csv')
 df_merged = df.merge(df_1)
 # Data Cleaning
