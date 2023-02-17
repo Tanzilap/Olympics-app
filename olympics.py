@@ -8,9 +8,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-file = r'C:/Users/Administrator/Downloads/athlete_events.csv'
+file = 'athlete_events.csv'
 df = pd.read_csv(file)
-df_1 = pd.read_csv(r'C:/Users/Administrator/Desktop/Python/noc_regions.csv')
+df_1 = pd.read_csv('noc_regions.csv')
 df_merged = df.merge(df_1)
 # Data Cleaning
 # Checking null values
