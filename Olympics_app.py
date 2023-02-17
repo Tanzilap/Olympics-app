@@ -12,9 +12,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 file = r'C:/Users/Administrator/Desktop/Python/athlete_events.csv'
-df = pd.read_csv(file)
+df = pd.read_csv('athlete_events.csv')
 file_1 = r'C:/Users/Administrator/Desktop/Python/noc_regions.csv'
-df_1 = pd.read_csv(file_1)
+df_1 = pd.read_csv('noc_regions.csv')
 df_merged = df.merge(df_1)
 # Data cleaning
 df_age = df_merged['Age'].fillna(0)
